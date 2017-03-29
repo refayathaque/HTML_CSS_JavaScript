@@ -30,7 +30,11 @@ $("#right-well").children().css("background-color", "#e8d2ef"); // similar to ^,
 $("button:nth-child(3)").css("letter-spacing", "4px"); // '[element/class]:nth-child(n)' css selector allows us to select the nth
                                                        // elements with the target class or element type, NOT IDs. So here we could
                                                        // have also done '$(".target:nth-child(3)")', since 'target' is a class.
-
+$(".btn:odd").css("font-family", "Serif"); // jQuery is zero-indexed, meaning that, counter-intuitively, :odd selects the second element,
+                                           // fourth element, sixth element, and so on.
+$(".btn:even").css("border-color", "#39ff14"); // :even selects the first element, third element, fifth element, and so on.
+                                               // Follows same principle as selector above.
+// $("body").addClass("animated hinge"); // jQuery can target the body element as well. 'animated fadeOut' is also really cool!
 });
 </script>
 
