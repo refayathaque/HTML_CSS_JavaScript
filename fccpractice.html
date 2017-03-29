@@ -13,8 +13,15 @@ $(document).ready(function() { // document ready function
 $("button").addClass("animated bounce"); // 'button' is an element so we don't need the '.'
 $(".well").addClass("animated shake"); // 'well' is a class so we need the '.'
 $("#target3").addClass("animated fadeOut"); // 'target3' is an id so we need the '#'
-$("#target4").css("color", "blue"); // allows us to change the CSS of an element
-$("#target4").css("font-size", "12px"); // allows only ONE CSS property to be changed
+$("#target4").css("color", "blue"); // '.css' jQuery function allows us to change the CSS of an element
+$("#target4").css("font-size", "12px"); // function allows only ONE CSS property to be changed
+$("#target1").prop("disabled", true); // '.prop' function allows us to adjust the properties of elements
+$("h3").html("<i>jQuery Playground</i>"); // '.html' function lets us add HMTL tags and text within an element (overwrites content)
+$("#target6").text("#TARGET6"); // similar to ^ function but ONLY for text, no HTML tags
+$("#target5").remove(); // '.remove' function removes HTML elements using jQuery
+$("#target2").appendTo("#right-well"); // '.appendTo' function allows us to move elements from one div to another,
+                                       // allows us to select HTML elements and APPEND them to another element
+
 });
 </script>
 
