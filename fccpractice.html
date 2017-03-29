@@ -20,7 +20,16 @@ $("h3").html("<i>jQuery Playground</i>"); // '.html' function lets us add HMTL t
 $("#target6").text("#TARGET6"); // similar to ^ function but ONLY for text, no HTML tags
 $("#target5").remove(); // '.remove' function removes HTML elements using jQuery
 $("#target2").appendTo("#right-well"); // '.appendTo' function allows us to move elements from one div to another,
-                                       // allows us to select HTML elements and APPEND them to another element
+                                       // allows us to select HTML elements and APPEND them to another element.
+$("#target2").clone().appendTo("#left-well"); // '.clone' function makes a copy of an element, we then used '.appendTO' to move
+                                              // it to another place * Sticking jQuery methods together called "function chaining".
+$("#target1").parent().css("background-color", "#f2a4a4"); // '.parent' function accesses the parent of whichever element is
+                                                           // is selected. Function chaining, e.g. with '.css', will change
+                                                           // the parent element's styling.
+$("#right-well").children().css("background-color", "#e8d2ef"); // similar to ^, but accesses the children
+$("button:nth-child(3)").css("letter-spacing", "4px"); // '[element/class]:nth-child(n)' css selector allows us to select the nth
+                                                       // elements with the target class or element type, NOT IDs. So here we could
+                                                       // have also done '$(".target:nth-child(3)")', since 'target' is a class.
 
 });
 </script>
