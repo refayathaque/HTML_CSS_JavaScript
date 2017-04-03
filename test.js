@@ -1,6 +1,9 @@
-var x = 4
-var y = 5
+var x = 4 // Ruby: x = 4
+var y = 5 // Ruby: x = 5
 
-console.log(x + y);
+// Ruby: puts x + y
+console.log(x + y); // Outputs 9
 
-// Node REPL is just 'node' in the shell, to exit out: '.exit'
+// Node's REPL (analogous to PRY/IRB in Ruby) is
+// just 'node' in the terminal, to exit out do
+// '.exit'
