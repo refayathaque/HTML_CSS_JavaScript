@@ -2,7 +2,7 @@
 <html lang="en">
 <!-- Practice with Bootstrap -->
 
-<head>
+<head> <!-- Below is older version of Bootstrap NOT ALPHA 4! -->
 <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
 <link rel="stylesheet" href="animate.css"> <!-- Required for animation, file is in HTML_CSS_JavaScript folder -->
 </head>
@@ -27,7 +27,7 @@ $("#target1").parent().css("background-color", "#f2a4a4"); // '.parent' function
                                                            // is selected. Function chaining, e.g. with '.css', will change
                                                            // the parent element's styling.
 $("#right-well").children().css("background-color", "#e8d2ef"); // similar to ^, but accesses the children
-$("button:nth-child(3)").css("letter-spacing", "4px"); // '[element/class]:nth-child(n)' css selector allows us to select the nth
+$("button:nth-child(3)").css("letter-spacing", "4px"); // '[element or class]:nth-child(n)' css selector allows us to select the nth
                                                        // elements with the target class or element type, NOT IDs. So here we could
                                                        // have also done '$(".target:nth-child(3)")', since 'target' is a class.
 $(".btn:odd").css("font-family", "Serif"); // jQuery is zero-indexed, meaning that, counter-intuitively, :odd selects the second element,
